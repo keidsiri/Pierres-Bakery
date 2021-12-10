@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using ToDoList.Models;  //import namespaces from Item.cs
+using PierresBakery.Models;  //import namespaces from PierresBakery
 
 class Program
 {

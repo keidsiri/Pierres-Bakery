@@ -1,7 +1,8 @@
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ToDoList.Models;
+using PierresBakery.Models;
 
-namespace ToDoList.Tests
+namespace PierresBakery.Tests
 {
   [TestClass]
   public class ItemTests

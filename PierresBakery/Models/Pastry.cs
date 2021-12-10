@@ -1,6 +1,6 @@
-namespace ToDoList.Models
+namespace PierresBakery.Models
 {
-  public class Item
+  public class Pastry
   {
 
     // properties, methods, etc. will go here.
