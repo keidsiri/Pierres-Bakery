@@ -47,10 +47,10 @@ namespace PierresBakery.Tests
       public void Bread_ReturnCostOfTwoBreads_Int()
       {
         int breadAmount = 2;
-        int breadPrice = 5;
+        int breadCost = 10 ;
         Bread newBread = new Bread(breadAmount);
         int newOrder = newBread.BreadCost();
-        Assert.AreEqual(breadPrice, newOrder);
+        Assert.AreEqual(breadCost, newOrder);
 
       }
 
