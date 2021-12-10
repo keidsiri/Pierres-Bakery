@@ -12,7 +12,15 @@ namespace PierresBakery.Tests
       {
         Pastry newPastry = new Pastry(1);
         Assert.AreEqual(typeof(Pastry) , newPastry.GetType());
-
+      }
+    
+    [TestMethod]
+      public void Pastry_GetAmountOfPastry_Int()
+      {
+        int pastryAmount = 3;
+        Pastry newPastry = new Pastry(pastryAmount);
+        int amount = newPastry.PastryAmount;
+        Assert.AreEqual(pastryAmount, amount);
       }
   }
 }
