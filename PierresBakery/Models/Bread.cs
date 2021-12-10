@@ -3,7 +3,7 @@ namespace PierresBakery.Models
   public class Bread
   {
     public int BreadAmount { get; set; }
-    public int BreadPrice {get; set; }
+    public int BreadPrice {get; set;}
     
     public Bread (int breadAmount)
     {
