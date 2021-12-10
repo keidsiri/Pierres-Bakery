@@ -32,16 +32,16 @@ namespace PierresBakery.Tests
         Assert.AreEqual(breadPrice, price);
       }
 
-    // [TestMethod]
-    //   public void Bread_SetChangeAmountOfBread_Int()
-    //   {
-    //     int breadAmount = 5;
-    //     Bread newBread = new Bread(breadAmount);
-    //     int breadAmountChange = 8;
-    //     newBread.BreadAmount = breadAmountChange;
-    //     int amount = newBread.BreadAmount;
-    //     Assert.AreEqual(breadAmountChange, amount);
-    //   }
+    [TestMethod]
+      public void Bread_SetChangeAmountOfBread_Int()
+      {
+        int breadAmount = 5;
+        Bread newBread = new Bread(breadAmount);
+        int breadAmountChange = 8;
+        newBread.BreadAmount = breadAmountChange;
+        int amount = newBread.BreadAmount;
+        Assert.AreEqual(breadAmountChange, amount);
+      }
 
 
 
