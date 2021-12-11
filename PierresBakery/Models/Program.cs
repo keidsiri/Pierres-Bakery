@@ -7,9 +7,10 @@ class Program
   public static void Main()
   {
     Console.WriteLine("_____________________________________________________________________________\n");
-    Console.WriteLine("Welcome to Pieerie's Bakery shop. We Made fresh bakeries with love everyday");
+    Console.WriteLine("Welcome to Pieerie's Bakery shop. We would love you to try our handmade bakery");
     Console.WriteLine("");
-    Console.WriteLine("--------------Fresh---------------Bakery--------------Everyday----------------\n");
+    Console.WriteLine("______________Fresh______________Bakery______________Everyday________________\n");
+    Console.WriteLine(""); 
     Console.WriteLine("First  :  We have Bread a single loaf is $5 \n ** Promotion now! Buy 2 get 1 Free!! **");
     Console.WriteLine("--------------------------------------------------\n");
     Console.WriteLine("Second :  We have Pastry for $2 each \n ** Promotion now! 3 Pastries for $5 ** ");
@@ -39,13 +40,22 @@ class Program
       }
       else
       {
-        Console.WriteLine("Please only enter the number for your order!!");
+        Console.WriteLine("Please only enter the number for your order.Goog bye!!!");
       }
     }
     else 
     {
       Console.WriteLine("Please only enter the number for your order!!");
       Console.WriteLine("Would you like to make an order?");
+      string answer = Console.ReadLine();
+      if ( answer.ToLower() == "yes" || answer.ToLower() == "yeah" || answer.ToLower() == "yea" || answer.ToLower() == "sure")
+      {
+        Main();
+      }
+      else 
+      {
+        Console.WriteLine("We hope to see you soon!");
+      }
     }
 
   }
