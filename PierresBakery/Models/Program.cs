@@ -16,13 +16,16 @@ class Program
     Console.WriteLine("How many Bread would you like to get?");
     string FirstOrder = Console.ReadLine();
     int breadOrder = int.Parse(FirstOrder);
-    Console.WriteLine($"You order {breadOrder} loaf of bread");
-
-
+    Bread newBread = new Bread(breadOrder);
+    int BreadCost = newBread.BreadCost();
+    Console.WriteLine("How many Pastry would you like to get?");
+    string SecondOrder = Console.ReadLine();
+    int pastryOrder = int.Parse(SecondOrder);
+    Pastry newPastry = new Pastry(pastryOrder);
+    int PastryCost = newPastry.PastryCost();
     
-    
-
-
-
+    int totalCost = BreadCost + PastryCost;
+    Console.WriteLine($"Your order total is {totalCost} dollars");
   }
 }
+
