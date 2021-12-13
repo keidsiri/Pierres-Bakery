@@ -27,6 +27,7 @@ class Program
 
     int total = breadCost + pastryCost;
     Console.WriteLine($"Your order is {breadOrder} Bread(s) {pastryOrder}, Pastries and the total is ${total}");
+    Console.WriteLine("");
     Console.WriteLine($"Thank you for your support! We hope to see you again soon!");
   }
 }
